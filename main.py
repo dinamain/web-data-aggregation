@@ -1,7 +1,12 @@
 from utils.logger import setup_logger
-import logging
+from scraper.site1_scraper import BookScraper
 
 setup_logger()
-logging.info("Project setup successful")
 
-print("Project setup successful")
+scraper = BookScraper("https://books.toscrape.com/")
+data = scraper.scrape()
+
+print(f"Total books scraped: {len(data)}")
+
+for item in data[:5]:
+    print(item)
