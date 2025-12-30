@@ -1,4 +1,3 @@
-import yaml
 from urllib.parse import urljoin
 from scraper.base_scraper import BaseScraper
 
@@ -26,20 +25,19 @@ class GenericScraper(BaseScraper):
 
                 if not title_elem or not price_elem:
                     continue
-                title_attr = self.config.get("title_attr")
+
                 title_attr = self.config.get("title_attr")
                 if title_attr:
                     title = title_elem.get(title_attr)
                 else:
                     title = title_elem.text.strip()
 
-
-                # title = title_elem.get(self.config["title_attr"])
                 price = price_elem.text
 
                 all_items.append({
                     "title": title,
-                    "price": price
+                    "price": price,
+                    "source": self.config["base_url"]
                 })
 
             next_btn = soup.select_one(self.config["pagination"]["next_selector"])
