@@ -82,6 +82,50 @@ web-data-aggregation/
 ## How to Run
 
 ### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/web-data-aggregation.git
+git clone https://github.com/dinamain/web-data-aggregation.git
 cd web-data-aggregation
+2. Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate    # Windows
+3. Install dependencies
+pip install -r requirements.txt
+4. Run the data pipeline
+python main.py
+5. Run visualizations
+python run_visuals.py
+
+Sample Outputs
+
+Price distribution histogram
+
+Top expensive products bar chart
+
+Price trend visualization (if historical data exists)
+
+Learning Outcomes
+
+Designed a real-world data pipeline instead of a one-off script
+
+Understood snapshot vs historical data modeling
+
+Handled false positives in change detection
+
+Applied composite keys for correct entity identity
+
+Practiced debugging data consistency and execution order issues
+
+Followed clean architectural principles
+
+Future Enhancements
+
+Add more websites via configuration
+
+Introduce dashboards (Streamlit)
+
+Schedule periodic scraping
+
+Add alerts for significant price changes
+Author
+
+Dina Usman
+B.Tech CSE | Python & Data Engineering
