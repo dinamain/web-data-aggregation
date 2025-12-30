@@ -1,0 +1,17 @@
+books:
+  base_url: "https://books.toscrape.com/"
+  product_container: "article.product_pod"
+  title_selector: "h3 a"
+  title_attr: "title"
+  price_selector: "p.price_color"
+  pagination:
+    next_selector: "li.next a"
+
+quotes:
+  base_url: "https://quotes.toscrape.com/"
+  product_container: "div.quote"
+  title_selector: "span.text"
+  title_attr: null
+  price_selector: "small.author"
+  pagination:
+    next_selector: "li.next a"
