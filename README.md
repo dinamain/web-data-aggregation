@@ -1,12 +1,11 @@
 
-<<<<<<< HEAD
+
 ## Overview
 This project is an end-to-end **web data aggregation and analysis pipeline** built using Python.  
 It goes beyond basic web scraping by focusing on **clean architecture, data correctness, historical tracking, and analysis**.
 
 The system is **config-driven**, allowing new websites to be added without changing scraping code.
 
----
 
 ## Key Features
 - Config-driven generic web scraper (YAML-based)
@@ -18,7 +17,7 @@ The system is **config-driven**, allowing new websites to be added without chang
 - Data analysis using Pandas
 - Price distribution and trend visualization using Matplotlib
 
----
+
 
 ## Tech Stack
 - Python
@@ -29,7 +28,7 @@ The system is **config-driven**, allowing new websites to be added without chang
 - YAML
 - Git
 
----
+
 
 ## Architecture Overview
 
@@ -46,7 +45,7 @@ SQLite Database
 Analysis & Visualization
 
 
----
+
 
 ## Project Structure
 
@@ -77,7 +76,6 @@ web-data-aggregation/
 
 
 
----
 
 ## How to Run
 
@@ -129,5 +127,5 @@ Author
 
 Dina Usman
 B.Tech CSE | Python & Data Engineering
-=======
->>>>>>> 3c6457eda9b1a7d4cfa1e52662e45b5e56eb5ba3
+
+
