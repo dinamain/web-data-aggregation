@@ -17,6 +17,7 @@ The system is **config-driven**, allowing new websites to be added without chang
 - Data analysis using Pandas
 - Price distribution and trend visualization using Matplotlib
 - Validated generic scraper across multiple structurally different websites using configuration only
+- Automated pipeline execution using a scheduler for periodic data collection
 
 
 ## Tech Stack
