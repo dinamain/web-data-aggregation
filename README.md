@@ -16,7 +16,7 @@ The system is **config-driven**, allowing new websites to be added without chang
 - Composite product identity to avoid false history
 - Data analysis using Pandas
 - Price distribution and trend visualization using Matplotlib
-
+- Validated generic scraper across multiple structurally different websites using configuration only
 
 
 ## Tech Stack
