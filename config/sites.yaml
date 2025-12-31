@@ -15,3 +15,12 @@ quotes:
   price_selector: "small.author"
   pagination:
     next_selector: "li.next a"
+
+countries:
+  base_url: "https://www.scrapethissite.com/pages/simple/"
+  product_container: "div.country"
+  title_selector: "h3.country-name"
+  title_attr: null
+  price_selector: "span.country-population"
+  pagination:
+    next_selector: null

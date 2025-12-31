@@ -342,3 +342,5 @@
 2025-12-30 21:14:04,914 - INFO - Upserted 1000 records into products
 2025-12-30 21:17:47,962 - INFO - Upserted 1000 records into products
 2025-12-30 21:19:34,995 - INFO - Upserted 1000 records into products
+2025-12-31 18:22:56,311 - ERROR - Failed to fetch https://www.scrapethissite.com/pages/simple/: HTTPSConnectionPool(host='www.scrapethissite.com', port=443): Read timed out. (read timeout=10)
+2025-12-31 18:22:56,765 - INFO - Upserted 43000 records into products

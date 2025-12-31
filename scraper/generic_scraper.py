@@ -40,10 +40,20 @@ class GenericScraper(BaseScraper):
                     "source": self.config["base_url"]
                 })
 
-            next_btn = soup.select_one(self.config["pagination"]["next_selector"])
-            if next_btn:
-                current_url = urljoin(current_url, next_btn["href"])
+            # next_btn = soup.select_one(self.config["pagination"]["next_selector"])
+            # if next_btn:
+            #     current_url = urljoin(current_url, next_btn["href"])
+            # else:
+            #     break
+            next_selector = self.config.get("pagination", {}).get("next_selector")
+
+            if next_selector:
+                next_button = soup.select_one(next_selector)
+                if next_button:
+                    next_url = next_button.get("href")
+                else:
+                    next_url = None
             else:
-                break
+                next_url = None
 
         return all_items

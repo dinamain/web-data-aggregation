@@ -11,8 +11,9 @@ def main():
     setup_logger()
 
     # 1. Load site configuration
-    site_config = load_site_config("books")
+    # site_config = load_site_config("books")
     # site_config = load_site_config("quotes")
+    site_config = load_site_config("countries")
 
     # 2. Scrape
     scraper = GenericScraper(site_config)
